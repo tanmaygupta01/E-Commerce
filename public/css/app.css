@@ -1,0 +1,159 @@
+body {
+    background-color: #e8f8c1;
+}
+
+.navbar {
+    background-color: #1976d2;
+}
+
+.nav-link {
+    margin: 0px 11px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    border-radius: 7px;
+    transition: 200ms;
+}
+
+.nav-link:hover {
+    background-color: #378bcf;
+}
+
+.nav-para:hover {
+    background-color: #1976d2;
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
+.cart-count {
+    font-size: 0.53rem;
+    top: -1px;
+}
+
+.profile {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    color: #8ac9fc;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(20, 81, 247);
+    color: white;
+}
+
+.headings {
+    font: 700 38px 'Bad Script';
+    color: #d90429;
+}
+
+.corners {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.scalecard {
+    box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc !important;
+    transition: 300ms;
+}
+
+.scalecard:hover {
+    background-color: #fefae0;
+    transform: scale(1.02) !important;
+}
+
+.index-button {
+    padding: 8px 13px;
+    font: 500 15px 'Roboto';
+    background-color: #b7e4c7;
+    color: #014f86;
+    transition: 120ms 80ms;
+}
+
+.index-button:hover {
+    cursor: pointer;
+    transform: translateY(-0.15rem);
+    box-shadow: 0px 4px 6px #ccc;
+    background-color: #4cc9f0;
+    color: white;
+}
+
+.index-button:focus {
+    transform: none;
+    box-shadow: none;
+}
+
+.fas.fa-heart {
+    color: red;
+}
+
+.card-title {
+    color: #227c9d;
+}
+
+.desc {
+    color: #545775;
+    font-size: 1.1rem;
+}
+
+.new-price {
+    color: #e76f51;
+}
+
+.discount {
+    color: #57cc99;
+}
+
+.show-corners {
+    border-radius: 15px;
+}
+
+.show-button {
+    padding: 10px 13px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-select:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        width: 420px;
+    }
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.text-decoration-line-through {
+    text-decoration-color: black !important;
+}
+
+.card-text {
+    margin-top: -3px;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1976d2;
+    font-size: 1.05rem;
+}
+
+.highlight {
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.highlight:active {
+    transform: scale(1.2);
+}
