@@ -14,7 +14,7 @@ module.exports.registerUser = async(req, res) => {
         const newUser = await User.register({ username, email, role }, password);
         req.login(newUser, function(err) {
             if (err) { return next(err); }
-            req.flash('success', `You registered successfully!! Welcome to ShopBunny ${req.user.username}`)
+            req.flash('success', `You registered successfully!! Welcome to ShopStop ${req.user.username}`)
             return res.redirect('/products');
         });
     } catch (e) {
@@ -64,8 +64,8 @@ module.exports.verification = (req, res) => {
     const msg = {
         to: email,
         from: {
-            name: 'ShopBunny',
-            email: 'anuragsingh7827@gmail.com'
+            name: 'ShopStop',
+            email: 'gupta.tanmay01@gmail.com'
         },
         subject: "User's One Time Password",
         text: `Your One Time Password is : ${sentPassword}`,

@@ -18,6 +18,7 @@ const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
+const seedDB = require('./seed');
 
 //Routes
 const productRoutes = require('./routes/product');
@@ -33,8 +34,8 @@ const productApi = require('./routes/apis/productapi');
 const cartApi = require('./routes/apis/cartapi');
 
 
-
-//connecting to the mongo DB database
+seedDB();
+// connecting to the mongo DB database
 const dbUrl = process.env.db_URL
 mongoose.connect(dbUrl)
     .then(() => {
@@ -43,7 +44,6 @@ mongoose.connect(dbUrl)
     .catch((err) => {
         console.log(err);
     });
-
 
 //Configuring templating engine to EJS
 app.set('view engine', 'ejs');
@@ -107,7 +107,7 @@ app.use((req, res, next) => {
 
 
 //Dummy data for testing
-const seed = require('./seed');
+// const seed = require('./seed');
 
 // seed();
 
